@@ -1,0 +1,39 @@
+body{
+	background-color: blue;
+}
+
+#selectedColorName{
+	background-color: orange;
+	height: 10px;
+	width: 10px;
+}
+
+#red{
+	background-color: red;
+	height: 30px;
+	width: 30px;
+}
+
+#orange{
+	background-color: orange;
+	height: 30px;
+	width: 30px;
+}
+
+#yellow{
+	background-color: yellow;
+	height: 30px;
+	width: 30px;
+}
+
+#green{
+	background-color: green;
+	height: 30px;
+	width: 30px;
+}
+
+#blue{
+	background-color: blue;
+	height: 30px;
+	width: 30px;
+}
