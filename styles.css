@@ -1,11 +1,12 @@
 body{
-	background-color: blue;
+	background-color: white;
+	text-align: center;
 }
 
 #selectedColorName{
-	background-color: orange;
-	height: 10px;
-	width: 10px;
+	background-color: white;
+	height: 35px;
+	width: 50px;
 }
 
 #red{
@@ -20,7 +21,7 @@ body{
 	width: 30px;
 }
 
-#yellow{
+#yellow{	
 	background-color: yellow;
 	height: 30px;
 	width: 30px;
@@ -36,4 +37,27 @@ body{
 	background-color: blue;
 	height: 30px;
 	width: 30px;
+}
+
+#purple{
+	background-color: darkorchid;
+	height: 30px;
+	width: 30px;
+}
+
+#eraser{
+	background-color: white;
+	height: 45px;
+	width: 45px;
+	border-color: black;
+	border-style: solid;
+}
+
+.canvas{
+	height: 35px;
+	width: 35px;
+	border-color: black;
+	background-color: white;
+	border-style: solid;
+	display: inline-block;
 }

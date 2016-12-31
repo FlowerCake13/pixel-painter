@@ -6,6 +6,7 @@ function changeColorOnClick(idName) {
 	console.log("HERE!!")
 	var originalElementColor = document.getElementById('selectedColorName').style.backgroundColor;
 	console.log(originalElementColor);
+	document.getElementById(idName).style.backgroundColor = originalElementColor;
 }
 
 function getBackgroundColor(idName) {
