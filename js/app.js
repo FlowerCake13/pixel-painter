@@ -16,3 +16,23 @@ function getBackgroundColor(idName) {
 	console.log(style);
 	document.getElementById('selectedColorName').style.backgroundColor = style;
 }	
+
+function fill() {
+	var originalElementColor = document.getElementById('selectedColorName').style.backgroundColor;
+	var gcname = document.getElementsByClassName("canvas");
+	var i;
+	for (i = 0; i < gcname.length; i++){
+		gcname[i].style.backgroundColor = originalElementColor;
+	}
+}
+
+function clearButton() {
+	console.log("affaewfefewauefwfewu")
+	var originalElementColor = document.getElementById('eraser').style.backgroundColor;
+	var gcname = document.getElementsByClassName("canvas");
+	console.log("faufahu")
+	var i;
+	for (i = 0; i < gcname.length; i++){
+		gcname[i].style.backgroundColor = originalElementColor;
+	}
+}

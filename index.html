@@ -5,12 +5,19 @@
 	<title>Pixel Painter</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<script type="text/javascript" src="js/app.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 </head>
 <body>
 	<header>Pixel Painter</header>	
 		<div id="entireContainer">
 			<div id="paletContainer">
+				<div id="crimson" class="palette" onclick="getBackgroundColor(this.id)">
+				</div>
 				<div id="red" class="palette" onclick="getBackgroundColor(this.id)">
+				</div>
+				<div id="orangered" class="palette" onclick="getBackgroundColor(this.id)">
+				</div>
+				<div id="tomato" class="palette" onclick="getBackgroundColor(this.id)">
 				</div>
 				<div id="orange" class="palette" onclick="getBackgroundColor(this.id)">	
 				</div>
@@ -22,9 +29,12 @@
 				</div>
 				<div id="purple" class="palette" onclick="getBackgroundColor(this.id)">
 				</div>
-				<div id="eraser" class="palette" onclick="getBackgroundColor(this.id)">
+				<!-- <div id="eraser" class="palette" onclick="getBackgroundColor(this.id)">
 				<p id="eraserP">Eraser</p>
-				</div>
+				</div> -->
+				<button id="eraser" onclick="getBackgroundColor(this.id)">eraser</button>
+				<button id="fill" onclick="fill()"> Fill</button>
+				<button id="clear" onclick="clearButton()"> Clear</button>
 			</div>
 			<div id="canvasContainer">
 				<div id="row1">

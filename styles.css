@@ -1,6 +1,11 @@
 body{
 	background-color: white;
 	text-align: center;
+	font-family: "PT Sans";
+}
+
+header{
+
 }
 
 #selectedColorName{
@@ -9,8 +14,26 @@ body{
 	width: 50px;
 }
 
+#crimson{
+	background-color: crimson;
+	height: 30px;
+	width: 30px;
+}
+
 #red{
 	background-color: red;
+	height: 30px;
+	width: 30px;
+}
+
+#orangered{
+	background-color: orangered;
+	height: 30px;
+	width: 30px;
+}
+
+#tomato{
+	background-color: tomato;
 	height: 30px;
 	width: 30px;
 }
