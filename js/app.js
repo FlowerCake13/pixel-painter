@@ -17,7 +17,7 @@ function changeColorOnClick(idName) {
 	console.log(style);
 	document.getElementById('selectedColorName').style.backgroundColor = style;
 }*/
-
+ 
 function colorPicker(color){
 	console.log(color);
 	console.log(document.getElementById('inputc').value)
