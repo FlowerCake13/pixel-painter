@@ -2,16 +2,37 @@ body{
 	background-color: white;
 	text-align: center;
 	font-family: "PT Sans";
+	background-color: #fbffd8;
 }
 
 header{
-
+	font-size: 100px;
+	font-family: "PT Sans";
 }
 
-#selectedColorName{
+.important{
+	background-color: white;
+}
+
+.canvas{
+	height: 35px;
+	width: 35px;
+	border-color: black;
+	background-color: white;
+	border-style: solid;
+	display: inline-block;
+}
+
+/*#selectedColorName{
 	background-color: white;
 	height: 35px;
 	width: 50px;
+}*/
+
+/*#maroon{
+	background-color: maroon;
+	height: 30px;
+	width: 30px;
 }
 
 #crimson{
@@ -66,21 +87,4 @@ header{
 	background-color: darkorchid;
 	height: 30px;
 	width: 30px;
-}
-
-#eraser{
-	background-color: white;
-	height: 45px;
-	width: 45px;
-	border-color: black;
-	border-style: solid;
-}
-
-.canvas{
-	height: 35px;
-	width: 35px;
-	border-color: black;
-	background-color: white;
-	border-style: solid;
-	display: inline-block;
-}
+}*/

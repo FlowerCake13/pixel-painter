@@ -9,13 +9,25 @@ function changeColorOnClick(idName) {
 	document.getElementById(idName).style.backgroundColor = originalElementColor;
 }
 
-function getBackgroundColor(idName) {
+/*function getBackgroundColor(idName) {
+	console.log(idName);
 	console.log("hey")
 	var element = document.getElementById(idName); 
 	var style = window.getComputedStyle(element,null).getPropertyValue("background-color");
 	console.log(style);
 	document.getElementById('selectedColorName').style.backgroundColor = style;
-}	
+}*/
+
+function colorPicker(color){
+	console.log(color);
+	console.log(document.getElementById('inputc').value)
+}
+
+function changeColorFromPicker(idName){
+	var element = document.getElementById(idName); 
+	var style = document.getElementById('inputc').value;
+	element.style.backgroundColor = style;
+}
 
 function fill() {
 	var originalElementColor = document.getElementById('selectedColorName').style.backgroundColor;

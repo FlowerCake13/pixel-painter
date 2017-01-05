@@ -11,6 +11,8 @@
 	<header>Pixel Painter</header>	
 		<div id="entireContainer">
 			<div id="paletContainer">
+<!-- 				<div id="maroon" class="palette" onclick="getBackgroundColor(this.id)">
+				</div>
 				<div id="crimson" class="palette" onclick="getBackgroundColor(this.id)">
 				</div>
 				<div id="red" class="palette" onclick="getBackgroundColor(this.id)">
@@ -28,83 +30,239 @@
 				<div id="blue" class="palette" onclick="getBackgroundColor(this.id)">
 				</div>
 				<div id="purple" class="palette" onclick="getBackgroundColor(this.id)">
-				</div>
-				<!-- <div id="eraser" class="palette" onclick="getBackgroundColor(this.id)">
-				<p id="eraserP">Eraser</p>
 				</div> -->
-				<button id="eraser" onclick="getBackgroundColor(this.id)">eraser</button>
-				<button id="fill" onclick="fill()"> Fill</button>
-				<button id="clear" onclick="clearButton()"> Clear</button>
+				<label id="labelc" >Choose a color for pixel color:</label>
+				<input id="inputc" type="color" onchange="colorPicker(this.value)"/>
+				<button id="eraser" class="important" onclick="getBackgroundColor(this.id)">Eraser</button>
+				<button id="fill" class="important" onclick="fill()"> Fill</button>
+				<button id="clear"  class="important"onclick="clearButton()"> Clear</button>
 			</div>
 			<div id="canvasContainer">
 				<div id="row1">
-					<div id="canvas1" class="canvas" onclick="changeColorOnClick(this.id)">
+					<div id="canvas1" class="canvas" onclick="changeColorFromPicker(this.id)">
 					</div>
-					<div id="canvas2" class="canvas" onclick="changeColorOnClick(this.id)">
+					<div id="canvas2" class="canvas" onclick="changeColorFromPicker(this.id)">
 					</div>
-					<div id="canvas3" class="canvas" onclick="changeColorOnClick(this.id)">
+					<div id="canvas3" class="canvas" onclick="changeColorFromPicker(this.id)">
 					</div>
-					<div id="canvas4" class="canvas" onclick="changeColorOnClick(this.id)">
+					<div id="canvas4" class="canvas" onclick="changeColorFromPicker(this.id)">
 					</div>
-					<div id="canvas5" class="canvas" onclick="changeColorOnClick(this.id)">
+					<div id="canvas5" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas6" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas7" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas8" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas9" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas10" class="canvas" onclick="changeColorFromPicker(this.id)">
 					</div>
 				</div>
 				<div id="row2">
-					<div id="canvas6" class="canvas" onclick="changeColorOnClick(this.id)">
+					<div id="canvas11" class="canvas" onclick="changeColorFromPicker(this.id)">
 					</div>
-					<div id="canvas7" class="canvas" onclick="changeColorOnClick(this.id)">
+					<div id="canvas12" class="canvas" onclick="changeColorFromPicker(this.id)">
 					</div>
-					<div id="canvas8" class="canvas" onclick="changeColorOnClick(this.id)">
+					<div id="canvas13" class="canvas" onclick="changeColorFromPicker(this.id)">
 					</div>
-					<div id="canvas9" class="canvas" onclick="changeColorOnClick(this.id)">
+					<div id="canvas14" class="canvas" onclick="changeColorFromPicker(this.id)">
 					</div>
-					<div id="canvas10" class="canvas" onclick="changeColorOnClick(this.id)">
+					<div id="canvas15" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas16" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas17" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas18" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas19" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas20" class="canvas" onclick="changeColorFromPicker(this.id)">
 					</div>
 				</div>
 				<div id="row3">
-					<div id="canvas11" class="canvas" onclick="changeColorOnClick(this.id)">
+					<div id="canvas21" class="canvas" onclick="changeColorFromPicker(this.id)">
 					</div>
-					<div id="canvas12" class="canvas" onclick="changeColorOnClick(this.id)">
+					<div id="canvas22" class="canvas" onclick="changeColorFromPicker(this.id)">
 					</div>
-					<div id="canvas13" class="canvas" onclick="changeColorOnClick(this.id)">
+					<div id="canvas23" class="canvas" onclick="changeColorFromPicker(this.id)">
 					</div>
-					<div id="canvas14" class="canvas" onclick="changeColorOnClick(this.id)">
+					<div id="canvas24" class="canvas" onclick="changeColorFromPicker(this.id)">
 					</div>
-					<div id="canvas15" class="canvas" onclick="changeColorOnClick(this.id)">
+					<div id="canvas25" class="canvas" onclick="changeColorFromPicker(this.id)">
 					</div>
-				</div>
+					<div id="canvas26" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas27" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas28" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas29" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas30" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+				</div>		
 				<div id="row4">
-					<div id="canvas16" class="canvas" onclick="changeColorOnClick(this.id)">
+					<div id="canvas31" class="canvas" onclick="changeColorFromPicker(this.id)">
 					</div>
-					<div id="canvas17" class="canvas" onclick="changeColorOnClick(this.id)">
+					<div id="canvas32" class="canvas" onclick="changeColorFromPicker(this.id)">
 					</div>
-					<div id="canvas18" class="canvas" onclick="changeColorOnClick(this.id)">
+					<div id="canvas33" class="canvas" onclick="changeColorFromPicker(this.id)">
 					</div>
-					<div id="canvas19" class="canvas" onclick="changeColorOnClick(this.id)">
+					<div id="canvas34" class="canvas" onclick="changeColorFromPicker(this.id)">
 					</div>
-					<div id="canvas20" class="canvas" onclick="changeColorOnClick(this.id)">
+					<div id="canvas35" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas36" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas37" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas38" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas39" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas40" class="canvas" onclick="changeColorFromPicker(this.id)">
 					</div>
 				</div>
 				<div id="row5">
-					<div id="canvas21" class="canvas" onclick="changeColorOnClick(this.id)">
+					<div id="canvas41" class="canvas" onclick="changeColorFromPicker(this.id)">
 					</div>
-					<div id="canvas22" class="canvas" onclick="changeColorOnClick(this.id)">
+					<div id="canvas42" class="canvas" onclick="changeColorFromPicker(this.id)">
 					</div>
-					<div id="canvas23" class="canvas" onclick="changeColorOnClick(this.id)">
+					<div id="canvas43" class="canvas" onclick="changeColorFromPicker(this.id)">
 					</div>
-					<div id="canvas24" class="canvas" onclick="changeColorOnClick(this.id)">
+					<div id="canvas44" class="canvas" onclick="changeColorFromPicker(this.id)">
 					</div>
-					<div id="canvas25" class="canvas" onclick="changeColorOnClick(this.id)">
+					<div id="canvas45" class="canvas" onclick="changeColorFromPicker(this.id)">
 					</div>
-				</div>		
-				<div id="selectedColorNameContainer">
+					<div id="canvas46" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas47" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas48" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas49" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas50" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+				</div>
+				<div id="row6">
+					<div id="canvas51" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas52" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas53" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas54" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas55" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas56" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas57" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas58" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas59" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas60" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+				</div>
+				<div id="row7">
+					<div id="canvas61" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas62" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas63" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas64" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas65" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas66" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas67" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas68" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas69" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas70" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+				</div>
+				<div id="row8">
+					<div id="canvas71" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas72" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas73" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas74" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas75" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas76" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas77" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas78" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas79" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas80" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+				</div>
+				<div id="row9">
+					<div id="canvas81" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas82" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas83" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas84" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas85" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas86" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas87" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas88" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas89" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas90" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+				</div>
+				<div id="row10">
+					<div id="canvas91" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas92" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas93" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas94" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas95" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas96" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas97" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas98" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas99" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+					<div id="canvas100" class="canvas" onclick="changeColorFromPicker(this.id)">
+					</div>
+				</div>
+<!-- 				<div id="selectedColorNameContainer">
 					<div id="selectedColorName" onclick="changeColorOnClick(this.id)">
 						Current Color
 					</div>
-				</div>
-			</div>
-			<div id="">
-				
+				</div> -->
 			</div>
 		</div>
 </body>
