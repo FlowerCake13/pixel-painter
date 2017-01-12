@@ -1,9 +1,3 @@
-function changeColorOnClick(idName) {
-	var originalElementColor = document.getElementById('selectedColorName').style.backgroundColor;
-	console.log(originalElementColor);
-	document.getElementById(idName).style.backgroundColor = originalElementColor;
-}
-
 function erase(){
 	document.getElementById('inputc').value = "#ffffff";
 }
@@ -11,6 +5,10 @@ function erase(){
 function changeColorFromPicker(idName){
 	var element = document.getElementById(idName); 
 	var style = document.getElementById('inputc').value;
+	if (element.tagName == 'SPAN') {
+		element.style.color = style;
+		return;
+	}
 	element.style.backgroundColor = style;
 }
 
