@@ -11,29 +11,9 @@
 	<header>Pixel Painter</header>	
 		<div id="entireContainer">
 			<div id="paletContainer">
-<!-- 				<div id="maroon" class="palette" onclick="getBackgroundColor(this.id)">
-				</div>
-				<div id="crimson" class="palette" onclick="getBackgroundColor(this.id)">
-				</div>
-				<div id="red" class="palette" onclick="getBackgroundColor(this.id)">
-				</div>
-				<div id="orangered" class="palette" onclick="getBackgroundColor(this.id)">
-				</div>
-				<div id="tomato" class="palette" onclick="getBackgroundColor(this.id)">
-				</div>
-				<div id="orange" class="palette" onclick="getBackgroundColor(this.id)">	
-				</div>
-				<div id="yellow" class="palette" onclick="getBackgroundColor(this.id)">
-				</div>
-				<div id="green" class="palette" onclick="getBackgroundColor(this.id)">
-				</div>
-				<div id="blue" class="palette" onclick="getBackgroundColor(this.id)">
-				</div>
-				<div id="purple" class="palette" onclick="getBackgroundColor(this.id)">
-				</div> -->
 				<label id="labelc" >Choose a color for pixel color:</label>
-				<input id="inputc" type="color" onchange="colorPicker(this.value)"/>
-				<button id="eraser" class="important" onclick="getBackgroundColor(this.id)">Eraser</button>
+				<input id="inputc" type="color"/>
+				<button id="eraser" class="important" onclick="erase()">Eraser</button>
 				<button id="fill" class="important" onclick="fill()"> Fill</button>
 				<button id="clear"  class="important"onclick="clearButton()"> Clear</button>
 			</div>
@@ -258,11 +238,6 @@
 					<div id="canvas100" class="canvas" onclick="changeColorFromPicker(this.id)">
 					</div>
 				</div>
-<!-- 				<div id="selectedColorNameContainer">
-					<div id="selectedColorName" onclick="changeColorOnClick(this.id)">
-						Current Color
-					</div>
-				</div> -->
 			</div>
 		</div>
 </body>
